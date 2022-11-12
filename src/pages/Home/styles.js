@@ -40,8 +40,6 @@ export const Brand = styled.div`
 export const Menu = styled.div`
   grid-area: menu;
 
-  /* display: flex;
-  flex-direction:column; */
   
   padding-top: 3rem ;
   text-align:center;
@@ -56,12 +54,28 @@ export const Menu = styled.div`
 
 export const Search = styled.ul`
   grid-area: search;
+  padding: 5rem 6.4rem 0;
 `;
 
 export const Content = styled.div`
   grid-area: content;
+  padding: 2rem 6.4rem;
+  overflow-y: auto;
+
 `;
 
 export const NewNote= styled.button`
   grid-area: newnote;
+
+  background-color: ${({theme}) => theme.COLORS.ORANGE};
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >svg {
+    margin-right: 8px;
+  }
+
 `;

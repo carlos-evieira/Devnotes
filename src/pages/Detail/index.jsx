@@ -13,7 +13,7 @@ export function Detail(){
       <Header/>
       <main>
         <Content>
-        <ButtonText title="Excluir nota"/>
+        <ButtonText title="Excluir nota" isActive/>
         <h1>Introdução ao React</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eligendi totam. Veniam necessitatibus mollitia veritatis minus eum eligendi a in aliquid ad, molestias recusandae praesentium inventore magnam dolores odio architecto!
         Fuga obcaecati, minus harum laboriosam tempore dolores quia recusandae iste alias maxime asperiores quas quidem nulla corrupti blanditiis voluptatem error saepe! Quos doloribus odit voluptates ullam omnis quo maiores amet!

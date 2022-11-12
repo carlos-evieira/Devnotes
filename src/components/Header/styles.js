@@ -12,7 +12,7 @@ export const Container = styled.header`
 
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding: 0 6.4rem;
 
 `
 
@@ -55,7 +55,7 @@ export const Logout = styled.button`
 
   > svg {
     color: ${({theme}) => theme.COLORS.GRAY_100};
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: filter 0.2s;
   }
 

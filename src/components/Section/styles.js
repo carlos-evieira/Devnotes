@@ -8,11 +8,11 @@ export const Container = styled.section`
     border-bottom-style: solid;
     border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
-    padding-bottom: .6rem;
-    margin-bottom: .8rem;
+    padding-bottom: .3rem;
+    margin-bottom: .5rem;
 
     color: ${({ theme }) => theme.COLORS.GRAY_100};
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 500;
     font-style: none;
   }

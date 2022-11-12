@@ -5,7 +5,7 @@
     background-color: ${({theme}) => theme.COLORS.ORANGE};
     color: ${({theme}) => theme.COLORS.BACKGROUND_800};
 
-    height: 3.5rem;
+    height: 3rem;
     border: 0;
     border-radius: 0.3rem;
     padding: 0 1rem;

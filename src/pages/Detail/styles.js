@@ -11,8 +11,8 @@ export const Container = styled.div`
   
     >main {
       grid-area: content;
-      overflow-y: scroll;
-      padding: 4rem 0;
+      overflow-y: auto;
+      padding: 3rem 0;
     }
   
 `
@@ -23,7 +23,7 @@ list-style: none;
   >li {
 
     a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
@@ -41,12 +41,12 @@ export const Content = styled.div`
   }
 
   >h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
  
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: ${({ theme }) => theme.COLORS.WHITE};
     text-align: justify;
