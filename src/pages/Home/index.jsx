@@ -34,8 +34,8 @@ export function Home(){
 					<Note data = {{
 						title: 'React Modal Exemplo de Middleware',
 						tags: [
-							{id: 1, name: 'react'},
-							{id: 2, name: 'nodeJs'}
+							{id: '1', name: 'react'},
+							{id: '2', name: 'nodejs'}
 						]
 					}} /> 
 				</Section>
