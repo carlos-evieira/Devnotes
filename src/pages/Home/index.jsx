@@ -11,7 +11,7 @@ export function Home(){
   return(
     <Container>
       <Brand>
-        <h1>Notepad</h1>
+        <h1>DevNotes</h1>
       </Brand>
 
       <Header />
@@ -39,7 +39,7 @@ export function Home(){
         </Section>
       </Content>
 
-      <NewNote>
+      <NewNote to="/new">
         <FiPlus/>
         Criar Nota
       </NewNote>

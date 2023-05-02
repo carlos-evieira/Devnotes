@@ -1,4 +1,5 @@
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
+import{ Link } from 'react-router-dom'
 
 import {Input} from '../../components/Input'
 import {Button} from '../../components/Button'
@@ -10,7 +11,7 @@ export function  SignUp(){
     <Container>
       <Background />
       <Form>
-        <h1>NotePad</h1>
+        <h1>DevNotes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis</p>
 
         <h2>Crie sua Conta</h2>
@@ -36,9 +37,9 @@ export function  SignUp(){
          
         </Button>
 
-        <a href="#">
+        <Link to="/">
           Fazer Login
-        </a>
+        </Link>
 
       </Form>
 
