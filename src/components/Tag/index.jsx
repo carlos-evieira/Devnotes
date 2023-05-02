@@ -1,9 +1,9 @@
-import { Container }from './styles.js'
+import { Container } from "./styles";
 
 export function Tag({title, ...rest}){
-    return(
-        <Container {...rest}>
-            {title}
-        </Container>
-    )
+  return(
+    <Container {...rest}>
+      {title}
+    </Container>
+  )
 }

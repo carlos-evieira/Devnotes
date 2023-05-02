@@ -1,3 +1,0 @@
-# Devnotes
-
-## teste para aula

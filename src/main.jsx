@@ -1,17 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { ThemeProvider } from 'styled-components'
-import GlobalStyles from './styles/global'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Profile } from "./pages/Profile";
+import { ThemeProvider } from "styled-components"; //compartilha com todas as rotas o tema
+import GlobalStyles from "./styles/global";
+import theme from "./styles/theme"; //criar uma instancia do Theme provider para compartilhar com todas as rotas o tema
 
-import theme from './styles/theme.js'
-
-import { Home } from './pages/Home'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode >
-    <ThemeProvider theme ={theme}>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Home />
+      <Profile/>
     </ThemeProvider>
   </React.StrictMode>
-)
+);
