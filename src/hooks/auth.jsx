@@ -29,7 +29,15 @@ function AuthProvider({children}){
    
   }
 
-  //Para quando a página for recarregada os informações de autenticação e carregamento da página não sejam perdidas
+  // remove do localStorage o usuario e token o que faz com que o usuario seja redirecionado para a tela de login
+  function signOut(){
+    localStorage.removeItem("@devnotes:token")
+    localStorage.removeItem("@devnotes:user")
+
+    setData({})
+  }
+
+  //Para quando a página for recarregada ou o navegador seja fechado, as informações de autenticação e carregamento da página não sejam perdidas
   useEffect(() => {
     const token = localStorage.getItem("@devnotes:token")
     const user = localStorage.getItem("@devnotes:user")
@@ -47,7 +55,12 @@ function AuthProvider({children}){
 
   return(
 
-    <AuthContext.Provider value={{ signIn, user: data.user }} >
+    <AuthContext.Provider value={{ 
+      signIn, 
+      signOut,
+      user: data.user 
+      }} 
+      >
       {children}
     </AuthContext.Provider>
   )
